@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package mci.interceptor.v1;
+
+service InterceptorService {
+  rpc Connect(stream ConnectRequest) returns (stream ConnectResponse);
+}
+
+message ConnectRequest {
+  string client_id = 1;
+}
+
+message ConnectResponse {
+  string message_id = 1;
+}

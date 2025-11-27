@@ -1,0 +1,18 @@
+version: v2
+modules:
+  - path: proto/application
+    name: buf.build/modelcontrolinterface/application
+  - path: proto/hook
+    name: buf.build/modelcontrolinterface/event-hook
+  - path: proto/interceptor
+    name: buf.build/modelcontrolinterface/interceptor
+  - path: proto/sandbox
+    name: buf.build/modelcontrolinterface/sandbox
+  - path: proto/service
+    name: buf.build/modelcontrolinterface/service
+lint:
+  use:
+    - STANDARD
+breaking:
+  use:
+    - FILE

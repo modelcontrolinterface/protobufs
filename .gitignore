@@ -1,0 +1,5 @@
+buf.lock
+gen/
+.idea/
+.vscode/
+*.swp
